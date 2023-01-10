@@ -10,9 +10,12 @@ import SwiftUI
 struct TweetView: View {
     var body: some View {
         HStack(alignment: .top) {
-            Image(systemName: "person.circle.fill")
-                .font(.largeTitle)
+            
+            Image("doug")
+                .resizable()
                 .frame(width: 50, height: 50)
+                .clipShape(Circle())
+                
             
             VStack(alignment: .leading, spacing: 10) {
                 // Tweet user info
@@ -63,7 +66,8 @@ struct TweetView: View {
                     Spacer()
                     Image(systemName: "square.and.arrow.up")
                 }
-                .foregroundColor(.gray)
+                .font(.system(size: 14))
+                .foregroundColor(.black.opacity(0.6))
             }
         }
         .padding()

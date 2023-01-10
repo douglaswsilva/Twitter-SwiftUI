@@ -9,13 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ScrollView(showsIndicators: false) {
+            VStack {
+                ForEach((1...50), id: \.self) { _ in
+                    TweetView()
+                    Divider()
+                }
+            }
         }
-        .padding()
     }
 }
 
