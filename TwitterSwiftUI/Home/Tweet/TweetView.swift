@@ -13,7 +13,7 @@ struct TweetView: View {
             
             Image("doug")
                 .resizable()
-                .frame(width: 50, height: 50)
+                .frame(width: 60, height: 60)
                 .clipShape(Circle())
                 
             
@@ -40,7 +40,7 @@ struct TweetView: View {
                 HStack(alignment: .bottom) {
                     HStack {
                         Image(systemName: "chart.bar.xaxis")
-                        Text("1,0003")
+                        Text("25.8k")
                     }
                     Spacer()
                     

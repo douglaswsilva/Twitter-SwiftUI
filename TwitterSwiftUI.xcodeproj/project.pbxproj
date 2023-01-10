@@ -13,6 +13,7 @@
 		083DEEC4296880AF00650991 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 083DEEC3296880AF00650991 /* Preview Assets.xcassets */; };
 		083DEECE296881A100650991 /* TweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083DEECD296881A100650991 /* TweetView.swift */; };
 		08C7E692296CE4EC009CF235 /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C7E691296CE4EC009CF235 /* MainPageView.swift */; };
+		08C7E694296CE739009CF235 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C7E693296CE739009CF235 /* TabBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		083DEEC3296880AF00650991 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		083DEECD296881A100650991 /* TweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetView.swift; sourceTree = "<group>"; };
 		08C7E691296CE4EC009CF235 /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
+		08C7E693296CE739009CF235 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			children = (
 				083DEECB2968816700650991 /* Tweet */,
 				08C7E691296CE4EC009CF235 /* MainPageView.swift */,
+				08C7E693296CE739009CF235 /* TabBarView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 				083DEEBF296880AD00650991 /* ContentView.swift in Sources */,
 				083DEECE296881A100650991 /* TweetView.swift in Sources */,
 				08C7E692296CE4EC009CF235 /* MainPageView.swift in Sources */,
+				08C7E694296CE739009CF235 /* TabBarView.swift in Sources */,
 				083DEEBD296880AD00650991 /* TwitterSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
