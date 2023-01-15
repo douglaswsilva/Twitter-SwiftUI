@@ -12,7 +12,7 @@ struct MainPageView: View {
         ScrollView(showsIndicators: false) {
             VStack {
                 ForEach((1...50), id: \.self) { _ in
-                    TweetView()
+                    TweetView(tweet: sampleTweet)
                     Divider()
                 }
             }

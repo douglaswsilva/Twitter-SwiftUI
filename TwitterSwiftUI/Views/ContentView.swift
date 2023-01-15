@@ -32,20 +32,6 @@ struct ContentView: View {
                 }
         }
         .navigationViewStyle(DefaultNavigationViewStyle())
-
-//        .overlay {
-//            ZStack {
-//                Color.clear
-//                    .background(.ultraThinMaterial)
-//
-//                Text("Twitter")
-//                    .font(.largeTitle.weight(.bold))
-//                    .frame(maxWidth: .infinity, alignment: .leading)
-//                    .padding(.leading, 20)
-//            }
-//            .frame(height: 70)
-//            .frame(maxHeight: .infinity, alignment: .top)
-//        }
     }
 }
 

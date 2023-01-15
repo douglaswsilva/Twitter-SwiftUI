@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct TweetView: View {
+    let tweet: Tweet
+    
     var body: some View {
         HStack(alignment: .top) {
             
-            Image("doug")
+            Image(uiImage: tweet.user.profileImage)
                 .resizable()
                 .frame(width: 60, height: 60)
                 .clipShape(Circle())
@@ -20,13 +22,13 @@ struct TweetView: View {
             VStack(alignment: .leading, spacing: 10) {
                 // Tweet user info
                 HStack(alignment: .top) {
-                    Text("Danilo Monteiro")
+                    Text(tweet.user.displayName)
                         .fontWeight(.bold)
                     
                     HStack {
-                        Text("@1danilo")
+                        Text(tweet.user.username)
                         Text("-")
-                        Text("18h")
+                        Text(tweet.postedAt)
                         Spacer()
                         Image(systemName: "ellipsis")
                     }
@@ -34,33 +36,38 @@ struct TweetView: View {
                 }
                 
                 // Tweet Content
-                Text("Cara, tem 50 mil problemas de pesquisa relevantes na indústria acontecendo todo dia. Todo dia, alguém me pergunta algo que é um perfeito problema de pesquisa de doutorado/mestrado.")
+                Text(tweet.message)
                 
                 // Tweet bottom bar
                 HStack(alignment: .bottom) {
+                    
+                    // Stats
                     HStack {
                         Image(systemName: "chart.bar.xaxis")
-                        Text("25.8k")
+                        Text(tweet.statsCount)
                     }
                     Spacer()
                     
+                    // Comments
                     HStack {
                         Image(systemName: "bubble.left")
-                        Text("3")
+                        Text(tweet.commentsCount)
                     }
                     
                     Spacer()
                     
+                    // Retweet
                     HStack {
                         Image(systemName: "arrow.2.squarepath")
-                        Text("23")
+                        Text(tweet.retweetCount)
                     }
                     
                     Spacer()
                     
+                    // Likes
                     HStack {
                         Image(systemName: "heart")
-                        Text("15")
+                        Text(tweet.likesCount)
                     }
                     
                     Spacer()
@@ -76,6 +83,6 @@ struct TweetView: View {
 
 struct TweetView_Previews: PreviewProvider {
     static var previews: some View {
-        TweetView()
+        TweetView(tweet: sampleTweet)
     }
 }
