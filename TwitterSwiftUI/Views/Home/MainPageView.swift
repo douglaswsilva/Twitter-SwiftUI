@@ -9,11 +9,32 @@ import SwiftUI
 
 struct MainPageView: View {
     var body: some View {
-        ScrollView(showsIndicators: false) {
+        ZStack {
+            ScrollView(showsIndicators: false) {
+                VStack {
+                    ForEach((1...50), id: \.self) { _ in
+                        TweetView(tweet: sampleTweet)
+                        Divider()
+                    }
+                }
+            }
+            
             VStack {
-                ForEach((1...50), id: \.self) { _ in
-                    TweetView(tweet: sampleTweet)
-                    Divider()
+                Spacer()
+                HStack {
+                    Spacer()
+                    Button(action: {
+                        // TODO
+                    }) {
+                        Image(systemName: "plus")
+                            .font(.title3)
+                            .fontWeight(.semibold)
+                            .frame(width: 65, height: 65)
+                            .background(TwitterBlue)
+                            .foregroundColor(.white)
+                            .clipShape(Circle())
+                    }
+                    .padding()
                 }
             }
         }

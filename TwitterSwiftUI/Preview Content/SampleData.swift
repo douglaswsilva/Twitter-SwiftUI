@@ -7,7 +7,9 @@
 
 import Foundation
 import UIKit
+import SwiftUI
 
+let TwitterBlue = Color("TwitterBlue")
 
 let sampleUser = User(username: "@costelinha",
                 displayName: "Douglas",
