@@ -14,15 +14,16 @@ struct ContentView: View {
                 .navigationBarTitle("", displayMode: .inline)
                 .toolbar {
                     ToolbarItem(placement: .navigationBarLeading) {
-                        Image("doug")
+                        Image(uiImage: sampleUser.profileImage)
                             .resizable()
                             .frame(width: 30, height: 30)
                             .clipShape(Circle())
                     }
                     
                     ToolbarItem(placement: .principal) {
-                        Image(systemName: "bird.fill")
-                            .foregroundColor(.blue)
+                        Image("twitterLogo")
+                            .resizable()
+                            .frame(width: 40, height: 40)
                     }
                     
                     ToolbarItem(placement: .navigationBarTrailing) {

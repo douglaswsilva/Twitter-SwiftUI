@@ -14,8 +14,8 @@ let sampleUser = User(username: "@costelinha",
                 profileImage: UIImage(named: "doug")!)
 
 let sampleTweet = Tweet(user: sampleUser,
-                  message: "Cara, tem 50 mil problemas de pesquisa relevantes na indústria acontecendo todo dia. Todo dia, alguém me pergunta algo que é um perfeito problema de pesquisa de doutorado/mestrado.",
-                  image: nil,
+                  message: "Esse é o Doug the Pug, um dos doginhos mais famosos da internet.",
+                  image: UIImage(named: "dougpug"),
                   postedAt: "16h",
                   statsCount: "25k",
                   commentsCount: "3",
